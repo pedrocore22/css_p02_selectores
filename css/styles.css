@@ -1,0 +1,65 @@
+/* Selectores CSS */
+
+/* Selector universal (Símbolo *) */
+
+/* * {
+   Reseteo CSS (Pendiente)
+   Las reglas que pongamos aquí
+   afectarán a todos los elementos
+} */
+
+/* Selector por atributo id (Símbolo #) */
+/* Con id solo seleccionaremos un elemento por página */
+
+#logo {
+    box-shadow: 2px 2px 4px grey;
+}
+
+/* Selector por clase CSS (Símbolo .) */
+/* Forma más utilizada de implementar reglas en los elementos
+Se aplica a todos los elementos que tengan esa clase */
+
+.destacado {
+    color: crimson;
+    font-style: italic;
+}
+
+/* Selector por elemento HTML (No lleva símbolo) */
+/* Todos los elementos de ese tipo implementarán las reglas */
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: crimson;
+}
+
+/* Selector por atributo (Símbolo []) */
+
+[type="text"] {
+    border: 2px solid violet;
+}
+
+[type="password"] {
+    border: 2px solid greenyellow;
+}
+
+/* Selector por pseudoclase (Símbolo :) */
+/* Las pseudoclases permiten implementar reglas según
+el estado del elemento */
+
+.destacado:hover {
+    color: white;
+    background-color: crimson;
+}
+
+/* Selector por pseudoelemento (Símbolo ::) */
+/* Los pseudoelementos permiten implementar reglas según
+la posición en el renderizado */
+
+p::first-letter {
+    font-size: 30px;
+    color: burlywood;
+}
+
+/* Los pseudo elementos más usados 
+son ::before y ::after (más adelante) */
